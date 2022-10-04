@@ -28,7 +28,7 @@
 <meta property="og:description" content="终于把3D skeleton可视化出来了">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-08-16T14:37:05.000Z">
-<meta property="article:modified_time" content="2022-08-16T14:48:05.157Z">
+<meta property="article:modified_time" content="2022-08-16T14:55:19.934Z">
 <meta property="article:tag" content="暑期实践">
 <meta name="twitter:card" content="summary">
 
@@ -130,12 +130,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -214,7 +214,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-08-16 22:37:05 / Modified: 22:48:05" itemprop="dateCreated datePublished" datetime="2022-08-16T22:37:05+08:00">2022-08-16</time>
+      <time title="Created: 2022-08-16 22:37:05 / Modified: 22:55:19" itemprop="dateCreated datePublished" datetime="2022-08-16T22:37:05+08:00">2022-08-16</time>
     </span>
 
   
@@ -229,9 +229,9 @@
     <div class="post-body" itemprop="articleBody">
         <p>终于把3D skeleton可视化出来了</p>
 <span id="more"></span>
-<p>最后是通过非常粗暴的方法解决的：直接用matplotlib描点，然后根据标注的关节把需要连接的点记成数组，然后直接连线。一开始想直接修改原有的visualize代码，但是弄了好几天都看不懂，大概就是遇到函数看不懂然后就查一下，查着查着自己就晕了，简直难受。</p>
-<p>最后的解决方法非常简单，但感觉走了很多弯路，心里还是有点难受，不过也许是必经之路（？</p>
-<p>感觉比较关键的主要是：<br>    1.先判断一下用的是什么工具，比如opencv或者matplotlib，然后大概了解一下<br>    2.如果看了很久都看不懂代码，那应该是超出自己水平太多了，可以先从简单一点的开始，比如画个函数图像<br>    3.感觉和读paper一样，都是一开始完全懵逼非常痛苦，然后痛苦一段时间之后突然就变好了，挺奇妙的，总之赶紧面对，多想想办法，别逃避了</p>
+<p>最后是通过非常粗暴的方法解决的：把结果print出来之后发现有现成的坐标，不用转换轴角式，直接用matplotlib描点，描点之后发现还挺成型的，然后根据注释（有猜的成分）把需要连接的点记成数组，然后直接连线竟然就得了。一开始想直接修改原有的visualize代码，但是弄了好几天都看不懂，大概就是遇到函数看不懂然后就查一下，查着查着自己就晕了，简直难受。</p>
+<p>最后的解决方法非常简单，但感觉走了很多弯路，心里还是有点难受，不过也许是必经之路（大概就是终于找到了一个能用自己水平解决的方法</p>
+<p>感觉比较关键的主要是：<br>    1.先判断一下用的是什么工具，比如opencv或者matplotlib，然后大概了解一下<br>    2.如果看了很久都看不懂代码，那应该是超出自己水平太多了，可以先从简单一点的开始，比如画个函数图像<br>    3.感觉和读paper一样，都是一开始无从下手非常痛苦，然后痛苦一段时间之后突然就变好了，挺奇妙的，总之赶紧面对，多想想办法，别逃避了</p>
 
     </div>
 
@@ -253,6 +253,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2022/09/06/2022-9-6/" rel="next" title="2022 9.6.">
+                  2022 9.6. <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
